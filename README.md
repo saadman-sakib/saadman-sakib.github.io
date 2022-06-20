@@ -27,3 +27,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://www.kaggle.com/saadmansakib2020/saadman-sakib-s-note-book
 
 
+rustup toolchain install stable-x86_64-pc-windows-gnu
+rustup default stable-x86_64-pc-windows-gnu
