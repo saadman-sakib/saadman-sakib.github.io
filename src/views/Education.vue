@@ -1,39 +1,55 @@
 <template>
   <div>
-    <br />
-    <div class="card p-4 m-5">
-      <h6 class="subtitle">School</h6>
-      <h4>Chittagong Collagiate School, Chittagong</h4>
-      <p>
-        Secondary School Certificate (Science) <br />
-        <span class="text-muted"> <b></b> GPA: 5.00 </span>
-      </p>
-    </div>
-    <div class="card p-4 m-5">
-      <h6 class="subtitle">High School</h6>
-      <h4>Notre Dame College, Dhaka</h4>
-      <p>
-        Higher Secondary School Certificate (Science) <br />
-        <span class="text-muted"> <b></b> GPA: 5.00 </span>
-      </p>
-    </div>
-
-    <div class="card p-4 m-5">
-      <h6 class="subtitle">High School</h6>
-      <h4>University of Dhaka</h4>
-      <p>
-        Robotics and Mechatronics Engineering <br />
-        <span class="text-muted"> <b></b> CGPA: 0.00 </span>
-      </p>
+    <h4>My Education</h4>
+    <div v-for="education in educations" :key="education.title">
+      <div class="card">
+        <h5>{{ education.title }}</h5>
+        <p>
+          {{ education.description }} <br>
+          <small>{{ education.date }}</small> 
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Education'
+<script lang="ts">
+  export default {
+  name: 'Projects',
+  data() {
+    return {
+      educations: [
+        {
+          title: 'BSc in Robotics and Mechatronics Engineering',
+          description: 'University of Dhaka, Bangladesh',
+          date: '2020 - 2024'
+        },
+        {
+          title: 'Higher Secondary Certificate (HSC)',
+          description: 'Notre Dame College, Dhaka, Bangladesh',
+          date: '2019'
+        },
+        {
+          title: 'Secondary School Certificate (SSC)',
+          description: 'Chittaong Collegiate School, Chittagong, Bangladesh',
+          date: '2017'
+        }
+      ]
+    }
+  },
+  created() {
+    // get request from url
+    // this.getData();
+  }
 }
 </script>
 
-<style>
+<style scoped>
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 </style>
