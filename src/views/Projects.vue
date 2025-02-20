@@ -2,7 +2,7 @@
   <div class="education">
     <h4>My Projects</h4>
     <div v-for="project in projects" :key="project.title">
-      <div class="card">
+      <div  class="card">
         <h5>{{ project.title }}</h5>
         <p>
           {{ project.description }} <br>
@@ -20,6 +20,11 @@ export default {
   data() {
     return {
       projects: [
+        {
+          title: 'Mapping of Mechanomyographic Signals from Arm Muscle Compartments',
+          description: 'Detecting  relationship between the muscle compartments and their response to the signals',
+          date: 'ongoing'
+        },
         {
           title: 'Gesture Controlled Manipulatior',
           description: 'An IoT based gesture controlled Manipulator with Deeplearning',

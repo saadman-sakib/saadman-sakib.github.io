@@ -2,12 +2,13 @@
 <template>
     <div class="about">
         <h4>About Me</h4>
-        <p>I am a junior year student of mechatronics engineering with a strong passion for applying technology to solve
-            real-world problems. With skills in numerical analysis using Python, embedded system programming, machine
-            learning, web programming, and app development, I am well-equipped to take on a variety of technical challenges.
-            My interests include exploring the exciting field of reinforcement learning, delving into the intricacies of
-            modern nonlinear control systems, and experimenting with transformer-based neural networks. I am also interested
-            in the emerging field of quantum computing and its potential for revolutionizing computation. I am ready to work
-            in collaborative environment with other enthusiast technologist, and learn new tools and techniques.</p>
+        <p>I am an undergraduate student in the Robotics and Mechatronics Engineering department at the University of
+            Dhaka. My research interests lie in the intersection of biomedical engineering and wearable technology,
+            focusing on medical imaging, wearable monitoring devices, and MMG signal sensing using piezo and
+            accelerometer sensors. I am particularly interested in developing efficient sensor packaging techniques with
+            rigorous testing to ensure reliability and accuracy. Additionally, I explore 3D visualization methods for
+            better data representation and work on selecting comfortable, skin-friendly materials for long-term wearable
+            applications. My goal is to contribute to the advancement of remote health monitoring systems, making them
+            more accessible and effective</p>
     </div>
 </template>
